@@ -1,0 +1,42 @@
+.table-content{
+    background-color: #fff;
+    margin:24px;
+    border-radius: 4px;
+    padding:0 16px ;
+}
+.m-table{
+  width: 100%;
+  border-collapse:collapse;
+}
+.m-table tr{
+    height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.m-table tr td,th{
+    border-right: 1px solid #ccc;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.m-table tbody tr button{
+    color: #0075C0;
+    font-weight: 700px;
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+.m-table tbody tr:hover{
+    background-color: rgba(204, 204, 204, 0.536);
+}
+.m-table tbody tr.m-row-selected{
+    background-color: #f3feee;
+}
+.m-table .text-align-left{
+    text-align: left;
+}
+.m-table .text-align-right{
+    text-align: right;
+}
+.m-table .text-align-center{
+    text-align: left;
+}

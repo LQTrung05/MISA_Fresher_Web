@@ -1,0 +1,48 @@
+.m-popup{
+    /* fixed nghĩa là nó không phục thuộc vào thằng nào cả */
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.596) ;
+}
+
+.m-popup .m-popup-content{
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 4px;
+}
+.m-popup-content .popup-header{
+    display: flex;
+    justify-content: space-between;
+}
+.m-popup-content .popup-header .popup-title{
+    display: flex;
+    padding: 20px 12px 20px 32px;
+    position: relative;
+    width: 100%;
+} 
+.popup-title .popup-title-name{
+    font-size: 24px;
+    color: #111;
+    font-weight: 700;
+}
+.m-popup-content .popup-header .popup-close{
+    display: flex;
+    padding: 12px;
+}
+.m-popup-checkbox{
+    padding: 12px;
+
+}
+.m-input-checkbox-popup{
+    width: 18px;
+    height: 18px;
+}

@@ -1,0 +1,42 @@
+.m-search-area{
+    display: flex;
+    align-items: center;
+    float: right;
+    margin: 16px;
+}
+.m-search-area-content{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 230px;
+    border-radius: 4px;
+}
+.m-refresh-btn{
+    margin-left: 8px;
+}
+.m-button{
+    font-weight: 700;
+}
+.m-input{
+    padding: 0 12px;
+    height: 36px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+/* Khi nhập liệu thì viền thẻ input đổi màu */
+.m-search-area-content:focus{
+    border: 1px solid #2ca01c;
+}
+.m-search-area-content:hover{
+    outline: 1px solid #e2e2e2;
+}
+.m-search-area-content::placeholder{
+    color: #bbb;
+    font-size: 12px;
+}
+
+.m-input-icon{
+    align-items: center;
+}

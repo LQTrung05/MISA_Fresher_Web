@@ -1,0 +1,32 @@
+.m-paging{
+    height: 56px;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.m-paging .m-paging-right{
+    display: flex;
+    align-items: center;
+}
+.m-paging .m-paging-right .m-paging-right-option select{
+    border-radius: 4px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    
+}
+.m-paging .m-paging-right-page button{
+    background: none;
+    border: none;
+}
+
+.m-paging .m-paging-right-page button.selected{
+    border: 1px solid #ccc;
+    font-weight: 600px;
+}
+
+.m-btn-before-after{
+    background:none;
+    border: none;
+    
+}

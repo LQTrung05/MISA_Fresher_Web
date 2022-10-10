@@ -1,0 +1,44 @@
+@import url(/css/components/button.css);
+@import url(/css/components/input.css);
+@import url(/css/components/icon.css);
+@import url(/css/components/table.css);
+@import url(/css/components/paging.css);
+@import url(/css/components/dialog.css);
+@import url(/css/components/search.css);
+@import url(/css/components/popup.css);
+/* Layout */
+@import url(/css/layout/header.css);
+@import url(/css/layout/navbar.css);
+@import url(/css/layout/content.css);
+@font-face {
+    font-family:notosans-bold ;
+    src: url(../assets/fonts/notosans-bold.3ede5aff.woff2);
+}
+@font-face {
+    font-family:notosans-italic ;
+    src: url(../assets/fonts/notosans-italic.1c1aaac9.woff2);
+}
+@font-face {
+    font-family:notosans-regular ;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+@font-face {
+    font-family:notosans-simidbold ;
+    src: url(../assets/fonts/notosans-semibold.df3e6dc4.woff2);
+}
+
+body{
+    margin: 0;
+    font-family:notosans-regular;
+    font-size: 13px;
+}
+*{
+    font-family: inherit;
+    font-size: inherit;
+}
+.main{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 56px);
+    background-color: bisque;
+}

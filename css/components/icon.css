@@ -1,0 +1,167 @@
+
+.m-icon-24 {
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+}
+
+.m-icon-14 {
+    width: 14px;
+    height: 14px;
+    background-image: url(/assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+}
+
+.m-icon-16 {
+    width: 16px;
+    height: 16px;
+    background-image: url(/assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+}
+
+.m-icon-24 {
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+}
+
+.m-icon-48 {
+    width: 48px;
+    height: 48px;
+    background-image: url(/assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+}
+
+.m-icon-dashboard {
+    background-position: -30px -1628px;
+}
+
+.m-icon-cash {
+    background-position: -73px -1628px;
+}
+
+.m-icon-bank {
+    background-position: -117px -1628px;
+}
+
+.m-icon-buy {
+    background-position: -161px -1628px;
+}
+
+.m-icon-sale {
+    background-position: -204px -1628px;
+}
+
+.m-icon-invoice {
+    background-position: -249px -1628px;
+}
+
+.m-icon-stock {
+    background-position: -291px -1628px;
+}
+
+.m-icon-tools {
+    background-position: -336px -1628px;
+}
+
+.m-icon-fixed-assets {
+    background-position: -378px -1630px;
+}
+
+.m-icon-tax {
+    background-position: -423px -1630px;
+}
+
+.m-icon-price {
+    background-position: -467px -1628px;
+}
+
+.m-icon-general {
+    background-position: -510px -1630px;
+}
+
+.m-icon-budget {
+    background-position: -378px -1659px;
+}
+
+.m-icon-report {
+    background-position: -547px -1628px;
+}
+
+.m-icon-finance {
+    background-position: -204px -1664px;
+}
+
+.m-icon-three-stripes {
+    background-position: -843px -30px;
+}
+
+.m-icon-chevron-down-bold {
+    background-position: -1128px -360px;
+}
+
+.m-icon-chevron-down {
+    background-position: -464px -408px;
+}
+
+.m-icon-bell {
+    background-position: -787px -30px;
+}
+
+.m-icon-refresh {
+    background-position: -423px -201px;
+}
+
+.m-icon-refresh:hover {
+    background-position: -1097px -88px  ;
+}
+
+.m-icon-search {
+    background-position: -992px -360px;
+}
+
+.m-icon-checkbox-active {
+    background-position: -1224px -360px;
+}
+
+.m-icon-arrow-down-blue {
+    background-position: -896px -359px;
+}
+
+.m-icon-arrow-dropdown {
+    background-position: -560px -359px;
+}
+
+.m-icon-help {
+    background-position: -89px -144px;
+}
+
+.m-icon-close {
+    background-position: -144px -144px;
+    cursor: pointer;
+}
+
+.m-icon-danger {
+    background-position: -24px -954px;
+}
+
+.m-icon-question {
+    background-position: -826px -456px;
+}
+
+.m-icon-warning {
+    background-position: -592px -456px;
+}
+
+.m-icon-success {
+    background-position: -984px -456px;
+}
+
+.m-icon-loading {
+    background: url(../../assets/loading.svg) no-repeat center;
+    width: 100%;
+    height: 100%;
+    animation: rotate 1s ease infinite;
+}

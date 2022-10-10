@@ -1,0 +1,26 @@
+.navbar{
+    width:200px;
+    flex-shrink: 0;
+    height: 100%;
+    background-color: #393a3d;
+}
+.nav-item{
+    margin:0 12px;
+}
+.navbar .nav-item .m-item-navbar{
+    display: flex;
+    height: 44px;
+    align-items: center;
+    /* padding-right: 14px;
+    padding-left: 8px; */
+    border-left: 6px solid transparent;
+    position: relative;
+    margin-bottom: 4px;
+}
+ .m-item-navbar .m-item-title{
+    color: #fff;
+}
+.m-item-navbar .m-item-icon{
+    margin:0 12px;
+    
+}
