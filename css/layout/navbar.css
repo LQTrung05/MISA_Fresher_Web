@@ -1,15 +1,31 @@
 .navbar{
     width:200px;
     flex-shrink: 0;
-    height: 100%;
+    height: 100vh;
     background-color: #393a3d;
     position: fixed;
     right: 0;
     left: 0;
-    top: 52px;
+    top: 0;
 }
+.navbar .sibar{
+    width: 24px;
+    height: 24px;
+    margin-right:10px ;
+    margin-left:16px;
+    /* Thêm icon vào bằng dòng lệnh sau */
+    background: url(/assets/img/Sprites.64af8f61.svg) no-repeat -424px -86px;
+
+}
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    height: 56px;
+    align-items: center;
+}
+
 .nav-item{
-    margin:0 12px;
+    margin:0 12px 4px 12px;
 }
 .navbar .nav-item .m-item-navbar{
     display: flex;
@@ -19,7 +35,6 @@
     padding-left: 8px; */
     border-left: 6px solid transparent;
     position: relative;
-    margin-bottom: 4px;
 }
  .m-item-navbar .m-item-title{
     color: #fff;

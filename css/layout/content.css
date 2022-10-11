@@ -1,7 +1,10 @@
 .page-content{
     background-color: rgba(204, 204, 204, 0.864);
     padding-top: 56px;
+    width: calc(100% - 200px);
+    height: calc(100vh - 56px);
     padding-left: 200px;
+    
 }
 .page-content-header{
     display: flex;

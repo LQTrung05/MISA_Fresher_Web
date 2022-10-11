@@ -36,11 +36,7 @@ body{
     font-family: inherit;
     font-size: inherit;
 }
-.main{
-    width: 100%;
-    height: calc(100vh - 56px);
-    background-color: bisque;
-}
+
 .m-pr-6 {
     padding-right: 6px;
   }

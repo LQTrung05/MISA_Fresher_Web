@@ -1,7 +1,7 @@
 .m-search-area{
     display: flex;
     align-items: center;
-    float: right;
+    align-self: end;
     margin: 16px;
 }
 

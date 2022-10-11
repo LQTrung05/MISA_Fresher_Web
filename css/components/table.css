@@ -1,8 +1,16 @@
 .table-content{
     background-color: #fff;
-    margin:24px;
     border-radius: 4px;
     padding:0 16px ;
+    display: block;
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+}
+.main-table{
+    overflow: auto;
+    /* overflow-y: auto; */
+
 }
 .m-table{
   width: 100%;
@@ -15,13 +23,16 @@
 }
 .m-table tr th{
     text-transform: uppercase;
+    vertical-align: middle;
 }
 .m-table tr td,th{
     border-right: 1px solid #ccc;
     padding-left: 16px;
     padding-right: 16px;
 }
-
+.m-func-col{
+    position: sticky;
+}
 .m-table tbody tr button{
     color: #0075C0;
     font-weight: 700px;
