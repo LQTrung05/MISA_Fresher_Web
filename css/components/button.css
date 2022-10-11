@@ -1,16 +1,41 @@
 .m-button{
     height: 36px;
     border-radius: 4px;
+    min-width: 80px;
     border: none;
     padding: 0 16px;
     color: #fff;
     background-color: #50B83C;
+    cursor: pointer;
     
 }
 
-.m-button:hover{
+.m-button:hover, focus{
     background-color: #73C663;
+    /* cursor: pointer; */
 }
 .m-button:active{
     background-color: #409330;
+}
+
+.m-btn{
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 0 16px;
+    color: #000;
+    margin-right: 16px;
+    font-weight: 600;
+}
+.m-btn:hover{
+    cursor: pointer;
+    outline: 1px solid #e2e2e2;
+    background-color: #ccc;
+}
+
+.btn-icon{
+    background-image: url(../../assets/img/Sprites.64af8f61.svg);
+    background-repeat: no-repeat;
+    /* background-position: ;  */
 }

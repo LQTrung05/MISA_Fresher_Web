@@ -4,6 +4,7 @@
     float: right;
     margin: 16px;
 }
+
 .m-search-area-content{
     display: flex;
     align-items: center;
@@ -17,16 +18,9 @@
 .m-button{
     font-weight: 700;
 }
-.m-input{
-    padding: 0 12px;
-    height: 36px;
-    border-radius: 2px;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-}
+
 /* Khi nhập liệu thì viền thẻ input đổi màu */
-.m-search-area-content:focus{
+.m-search-area-content:active{
     border: 1px solid #2ca01c;
 }
 .m-search-area-content:hover{

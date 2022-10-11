@@ -3,6 +3,10 @@
     flex-shrink: 0;
     height: 100%;
     background-color: #393a3d;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 52px;
 }
 .nav-item{
     margin:0 12px;

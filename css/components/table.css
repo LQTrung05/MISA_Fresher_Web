@@ -7,10 +7,14 @@
 .m-table{
   width: 100%;
   border-collapse:collapse;
+
 }
 .m-table tr{
     height: 40px;
   border-bottom: 1px solid #ccc;
+}
+.m-table tr th{
+    text-transform: uppercase;
 }
 .m-table tr td,th{
     border-right: 1px solid #ccc;
@@ -38,5 +42,5 @@
     text-align: right;
 }
 .m-table .text-align-center{
-    text-align: left;
+    text-align: center;
 }

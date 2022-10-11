@@ -15,7 +15,7 @@
     <div class="table" style="margin-top:16px ;">
         <div class="m-search-area">
             <div class="m-search-area-content">
-                <input type="text" class="m-input m-input-icon m-input-search m-search-emp" placeholder="Tìm theo mã, tên nhân viên" />
+                <input type="text" class="m-input-form m-input-icon m-input-search m-search-emp" placeholder="Tìm theo mã, tên nhân viên" />
                 <div class="m-icon-after-search m-icon-16 m-icon-search"></div>
             </div>
             <div class="m-refresh-btn m-icon-24 m-icon-refresh"></div>
@@ -124,7 +124,7 @@
         </div>
     </div>
 
-    <div class="m-popup">
+     <div class="m-popup">
         <div class="m-popup-model"></div>
         <div class="m-popup-content">
             <div class="popup-header">
@@ -146,17 +146,183 @@
             </div>
             <div class="popup-content">
                 <form action="" id="m-form-employee">
-                    <div class="m-form-conten-2-col">
-                        
+                    <div class="m-form-content-4-col">
+                        <div class="m-col-1">
+                            <div class="m-layout-form-40-60">
+                                <div class="m-input-form-40 m-pr-6 m-pb-12">
+                                    <div class="m-flex">
+                                        <div class="m-input-title">Mã</div>
+                                        <div class="m-input-title-require">&nbsp;*</div>
+                                    </div>
+                                    <input type="text" class="m-input-form m-input-require" name="EmployeeCode" maxlength="25" propName="EmployeeCode" />
+                                </div>
+                                <div class="m-input-form-60 m-pb-12">
+                                    <div class="m-flex">
+                                        <div class="m-input-title">Tên</div>
+                                        <div class="m-input-title-require">&nbsp;*</div>
+                                    </div>
+                                    <input type="text" class="m-input-form m-input-require" name="EmployeeName" maxlength="128" propName="EmployeeName" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-col-2">
+                            <div class="m-layout-form-40-60">
+                                <div class="m-input-form-40 m-pr-6 m-pb-12">
+                                    <div class="m-flex-wrap">
+                                        <div class="m-input-title">Ngày sinh</div>
+                                    </div>
+                                    <input type="date" class="m-input-form" name="DateOfBirth" propName="DateOfBirth" />
+                                </div>
+                                <div class="m-input-form-60 m-pb-12">
+                                    <div class="m-flex-wrap">
+                                        <div class="m-input-title">Giới tính</div>
+                                    </div>
+                                    <div class="m-radio-group">
+                                        <label class="m-con-radio">
+                                            <input type="radio" class="m-input-radio" value="1" checked="che" name="Gender" />
+                                            <span class="m-radio">
+                                                <span class="m-radio-border"></span>
+                                                <span class="m-radio-circle"></span>
+                                            </span>
+                                            <span class="m-radio-label">Nam</span>
+                                        </label>
+                                        <label class="m-con-radio">
+                                            <input type="radio" class="m-input-radio" value="0" name="Gender" />
+                                            <span class="m-radio">
+                                                <span class="m-radio-border"></span>
+                                                <span class="m-radio-circle"></span>
+                                            </span>
+                                            <span class="m-radio-label">Nữ</span>
+                                        </label>
+                                        <label class="m-con-radio">
+                                            <input type="radio" class="m-input-radio" value="0" name="Gender" />
+                                            <span class="m-radio">
+                                                <span class="m-radio-border"></span>
+                                                <span class="m-radio-circle"></span>
+                                            </span>
+                                            <span class="m-radio-label">Khác</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
                     </div>
-                    <div class="m-form-content-1-col"></div>
-                    <div class="m-form-content-3-col"></div>
+                    <div class="m-form-conten-2-col">
+                            <div class="m-col-1">
 
+                                <div class="m-input-form-100 m-pb-12">
+                                    <div class="m-flex">
+                                        <div class="m-input-title">Đơn vị</div>
+                                        <div class="m-input-title-require">&nbsp;*</div>
+                                    </div>
+                                    <div class="m-combo-box">
+                                        <select name="" id="" class="m-input-form">
+                                                    <option value="1">Phòng kế toán</option>
+                                                    <option value="1">Phòng kế toán</option>
+                                                    <option value="1">Phòng kế toán</option>
+                                                </select>
+                                    </div>
+                                </div>
+                                <div class="m-input-form-100 m-pb-12">
+                                    <div class="m-flex-wrap">
+                                        <div class="m-input-title">Chức danh</div>
+                                    </div>
+                                    <input type="text" class="m-input-form" name="EmployeePosition" maxlength="128" propName="EmployeePosition" />
+                                </div>
+                            </div>
+                            <div class="m-col-2">
+                                
+                                <div class="m-layout-form-40-60">
+                                <div class="m-input-form-60 m-pr-6 m-pb-12">
+                                    <div class="m-flex-wrap">
+                                        <div class="m-input-title">Số CMND</div>
+                                    </div>
+                                    <input type="text" class="m-input-form" name="IdentityNumber" maxlength="20" propName="IdentityNumber" />
+                                </div>
+                                <div class="m-input-form-40 m-pb-12">
+                                    <div class="m-flex-wrap">
+                                        <div class="m-input-title">Ngày cấp</div>
+                                    </div>
+                                    <input type="date" class="m-input-form" name="IdentityDate" propName="IdentityDate" />
+                                </div>
+                                </div>
+                                <div class="m-input-form-100 m-pb-12">
+                                    <div class="m-flex-wrap">
+                                        <div class="m-input-title">Nơi cấp</div>
+                                    </div>
+                                    <input type="text" class="m-input-form" name="IdentityPlace" propName="IdentityPlace" />
+                                </div>
+                            </div>
+                    </div>
+                    <div class="m-form-content-1-col">
+                            <div class="m-input-form-100">
+                                <div class="m-flex-wrap">
+                                    <div class="m-input-title">Địa chỉ</div>
+                                </div>
+                                <input type="text" class="m-input-form m-input-form-100 " name="Address" propName="Address" />
+                            </div>
+                    </div>
+
+                    <div class="m-form-content-3-col">
+                        <div class="m-input-form-33 m-pr-6" >
+                            <div class="m-flex-wrap">
+                                <div class="m-input-title">ĐT di động</div>
+                            </div>
+                            <input type="text" class="m-input-form" name="TelephoneNumber" propName="TelephoneNumber" />
+                        </div>
+                        
+                        <div class="m-input-form-33 m-pr-6" >
+                            <div class="m-flex-wrap">
+                                <div class="m-input-title">ĐT cố định</div>
+                            </div>
+                            <input type="text" class="m-input-form" name="PhoneNumber" propName="PhoneNumber" />    
+                        </div>
+                        <div class="m-input-form-33 m-pr-6" >
+                            <div class="m-flex-wrap">
+                                <div class="m-input-title">Email</div>
+                            </div>
+                            <input type="text" class="m-input-form" name="Email" propName="Email" />
+                        </div>
+                    </div>
+
+                    <div class="m-form-content-3-col">
+                        <div class="m-input-form-33 m-pr-6" >
+                            <div class="m-flex-wrap">
+                                <div class="m-input-title">Tài khoản ngân hàng</div>
+                            </div>
+                            <input type="text" class="m-input-form" name="BankAccountNumber" propName="BankAccountNumber" />
+                        </div>
+                        <div class="m-input-form-33 m-pr-6" >
+                            <div class="m-flex-wrap">
+                                <div class="m-input-title">Tên ngân hàng</div>
+                            </div>
+                            <input type="text" class="m-input-form" name="BankName" propName="BankName" />
+                        </div>
+                        <div class="m-input-form-33 m-pr-6" >
+                            <div class="m-flex-wrap">
+                                <div class="m-input-title">Chi nhánh</div>
+                            </div>
+                            <input type="text" class="m-input-form" name="BankBranchName" propName="BankBranchName" />
+                        </div>
+                    </div> 
+
+                    
+
+
+
+                    <div class="m-form-footer">
+                        <div class="m-form-part-cancel">
+                            <button class=" m-btn ">Hủy</button>
+                        </div>
+                        <div class="m-form-part-submit">
+                            <button class=" m-btn">Cất</button>
+                            <button class="m-button m-btn-insert-and-reload">Cất và Thêm</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
-    </div>
-
+    </div> 
 
 </body>
 </html>

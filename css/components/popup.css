@@ -1,6 +1,6 @@
 .m-popup{
     /* fixed nghĩa là nó không phục thuộc vào thằng nào cả */
-    
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,10 +9,15 @@
     background-color:rgba(0, 0, 0, 0.596) ;
 }
 
+.m-popup.open{
+    display: flex;
+}
 .m-popup .m-popup-content{
+    
     position: absolute;
     width: 900px;
-    height: 600px;
+    max-width: calc(100% - 64px);
+    min-height: 600px;
     background-color: #fff;
     top: 50%;
     left: 50%;
@@ -34,6 +39,7 @@
     color: #111;
     font-weight: 700;
 }
+
 .m-popup-content .popup-header .popup-close{
     display: flex;
     padding: 12px;
@@ -45,4 +51,53 @@
 .m-input-checkbox-popup{
     width: 18px;
     height: 18px;
+}
+.m-popup-content .popup-content{
+    padding: 0 32px;
+}
+#m-form-employee .m-form-conten-2-col{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.m-col-1{
+    width: 50%;
+    padding-right: 36px;
+}
+.m-col-2{
+    width: 50%;
+    
+}
+.m-form-content-3-col{
+    display: flex;
+    width: 70%;
+}
+.m-form-content-4-col{
+    display: flex;
+    width: 100%;
+}
+
+.m-form-content-1-col{
+    display: flex;
+}
+.m-flex{
+    display: flex;
+}
+
+.m-layout-form-40-60{
+    display: flex;
+}
+
+.m-input-title{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.m-form-footer{
+    margin-top: 16px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
 }
