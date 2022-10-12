@@ -122,7 +122,6 @@
             </div>
             <div class="page-content-body">
                 <div class="table-content" style="margin-top:16px ;">
-
                     <div class="m-search-area">
                         <div class="m-search-area-content">
                             <input type="text" class="m-border-input" placeholder="Tìm theo mã, tên nhân viên" />
@@ -131,8 +130,7 @@
                         <div class="m-refresh-btn m-icon-24 m-icon-refresh"></div>
                         
                     </div>
-
-                    <div class="main-table">
+                    <div class="wrap-table">
                         <table class="m-table" >
                         <thead>
                             <tr>
@@ -143,13 +141,19 @@
                                 <th class="text-align-left" style="min-width:200px ;" >Tên nhân viên</th>
                                 <th class="text-align-left" style="min-width:70px ;">Giới tính</th>
                                 <th class="text-align-center">Ngày sinh</th>
-                                <th class="text-align-left">Số CMND</th>
+                                <th class="text-align-left">
+                                    <div class="parent-of-tooltips">Số CMND
+                                        <div class="child-of-tooltips">
+                                            Số chứng minh nhân dân
+                                        </div>
+                                    </div>
+                                </th>
                                 <th class="text-align-left" style="min-width:100px ;">Chức danh</th>
                                 <th class="text-align-left" style="min-width:150px ;">Tên đơn vị</th>
                                 <th class="text-align-left" style="min-width:100px ;">Số tài khoản</th>
                                 <th class="text-align-left" style="min-width:120px ;">Tên ngân hàng</th>
                                 <th class="text-align-left" style="min-width:200px ;" >Chi nhánh ngân hàng</th>
-                                <th class="text-align-center m-func-col" style="min-width:100px ;" >Chức năng</th>
+                                <th class="text-align-center" style="min-width:100px ;">Chức năng</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -167,251 +171,321 @@
                                 <td class="text-align-left">01258456</td>
                                 <td class="text-align-left">BIDV</td>
                                 <td class="text-align-left">Từ Liêm - Hà Nội</td>
-                                <td class="text-align-center m-func-col">
-                                    <button>Sửa</button>
-                                    <button></button>
+                                <td class="text-align-center ">
+                                    <div class="m-td-dropdown">
+                                        <button>Sửa</button>
+                                        <button class="parent-multi-choices">
+                                                <div class=" m-item-icon m-icon-24 m-icon-arrow-down-blue m-mt-8 ">
+                                                    <div class="child-multi-choices">
+                                                        <div class="replication  m-chil-dd">Nhân bản</div>
+                                                        <div class="delete m-chil-dd">Xóa</div>
+                                                        <div class="pause m-chil-dd">Ngưng sử dụng</div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-align-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-align-left">00001</td>
+                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
+                                <td class="text-align-left">Nam</td>
+                                <td class="text-align-center">20/10/1990</td>
+                                <td class="text-align-left">016894752</td>
+                                <td class="text-align-left">Giảng viên</td>
+                                <td class="text-align-left">Hệ thống thông tin</td>
+                                <td class="text-align-left">01258456</td>
+                                <td class="text-align-left">BIDV</td>
+                                <td class="text-align-left">Từ Liêm - Hà Nội</td>
+                                <td class="text-align-center ">
+                                    <div class="m-td-dropdown">
+                                        <button>Sửa</button>
+                                        <button class="parent-multi-choices">
+                                                <div class=" m-item-icon m-icon-24 m-icon-arrow-down-blue m-mt-8 ">
+                                                    <div class="child-multi-choices">
+                                                        <div class="replication  m-chil-dd">Nhân bản</div>
+                                                        <div class="delete m-chil-dd">Xóa</div>
+                                                        <div class="pause m-chil-dd">Ngưng sử dụng</div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-align-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-align-left">00001</td>
+                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
+                                <td class="text-align-left">Nam</td>
+                                <td class="text-align-center">20/10/1990</td>
+                                <td class="text-align-left">016894752</td>
+                                <td class="text-align-left">Giảng viên</td>
+                                <td class="text-align-left">Hệ thống thông tin</td>
+                                <td class="text-align-left">01258456</td>
+                                <td class="text-align-left">BIDV</td>
+                                <td class="text-align-left">Từ Liêm - Hà Nội</td>
+                                <td class="text-align-center ">
+                                    <div class="m-td-dropdown">
+                                        <button>Sửa</button>
+                                        <button class="parent-multi-choices">
+                                                <div class=" m-item-icon m-icon-24 m-icon-arrow-down-blue m-mt-8 ">
+                                                    <div class="child-multi-choices">
+                                                        <div class="replication  m-chil-dd">Nhân bản</div>
+                                                        <div class="delete m-chil-dd">Xóa</div>
+                                                        <div class="pause m-chil-dd">Ngưng sử dụng</div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-align-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-align-left">00001</td>
+                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
+                                <td class="text-align-left">Nam</td>
+                                <td class="text-align-center">20/10/1990</td>
+                                <td class="text-align-left">016894752</td>
+                                <td class="text-align-left">Giảng viên</td>
+                                <td class="text-align-left">Hệ thống thông tin</td>
+                                <td class="text-align-left">01258456</td>
+                                <td class="text-align-left">BIDV</td>
+                                <td class="text-align-left">Từ Liêm - Hà Nội</td>
+                                <td class="text-align-center ">
+                                    <div class="m-td-dropdown">
+                                        <button>Sửa</button>
+                                        <button class="parent-multi-choices">
+                                                <div class=" m-item-icon m-icon-24 m-icon-arrow-down-blue m-mt-8 ">
+                                                    <div class="child-multi-choices">
+                                                        <div class="replication  m-chil-dd">Nhân bản</div>
+                                                        <div class="delete m-chil-dd">Xóa</div>
+                                                        <div class="pause m-chil-dd">Ngưng sử dụng</div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-align-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-align-left">00001</td>
+                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
+                                <td class="text-align-left">Nam</td>
+                                <td class="text-align-center">20/10/1990</td>
+                                <td class="text-align-left">016894752</td>
+                                <td class="text-align-left">Giảng viên</td>
+                                <td class="text-align-left">Hệ thống thông tin</td>
+                                <td class="text-align-left">01258456</td>
+                                <td class="text-align-left">BIDV</td>
+                                <td class="text-align-left">Từ Liêm - Hà Nội</td>
+                                <td class="text-align-center ">
+                                    <div class="m-td-dropdown">
+                                        <button>Sửa</button>
+                                        <button class="parent-multi-choices">
+                                                <div class=" m-item-icon m-icon-24 m-icon-arrow-down-blue m-mt-8 ">
+                                                    <div class="child-multi-choices">
+                                                        <div class="replication  m-chil-dd">Nhân bản</div>
+                                                        <div class="delete m-chil-dd">Xóa</div>
+                                                        <div class="pause m-chil-dd">Ngưng sử dụng</div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-align-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-align-left">00001</td>
+                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
+                                <td class="text-align-left">Nam</td>
+                                <td class="text-align-center">20/10/1990</td>
+                                <td class="text-align-left">016894752</td>
+                                <td class="text-align-left">Giảng viên</td>
+                                <td class="text-align-left">Hệ thống thông tin</td>
+                                <td class="text-align-left">01258456</td>
+                                <td class="text-align-left">BIDV</td>
+                                <td class="text-align-left">Từ Liêm - Hà Nội</td>
+                                <td class="text-align-center ">
+                                    <div class="m-td-dropdown">
+                                        <button>Sửa</button>
+                                        <button class="parent-multi-choices">
+                                                <div class=" m-item-icon m-icon-24 m-icon-arrow-down-blue m-mt-8 ">
+                                                    <div class="child-multi-choices">
+                                                        <div class="replication  m-chil-dd">Nhân bản</div>
+                                                        <div class="delete m-chil-dd">Xóa</div>
+                                                        <div class="pause m-chil-dd">Ngưng sử dụng</div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-align-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-align-left">00001</td>
+                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
+                                <td class="text-align-left">Nam</td>
+                                <td class="text-align-center">20/10/1990</td>
+                                <td class="text-align-left">016894752</td>
+                                <td class="text-align-left">Giảng viên</td>
+                                <td class="text-align-left">Hệ thống thông tin</td>
+                                <td class="text-align-left">01258456</td>
+                                <td class="text-align-left">BIDV</td>
+                                <td class="text-align-left">Từ Liêm - Hà Nội</td>
+                                <td class="text-align-center ">
+                                    <div class="m-td-dropdown">
+                                        <button>Sửa</button>
+                                        <button class="parent-multi-choices">
+                                                <div class=" m-item-icon m-icon-24 m-icon-arrow-down-blue m-mt-8 ">
+                                                    <div class="child-multi-choices">
+                                                        <div class="replication  m-chil-dd">Nhân bản</div>
+                                                        <div class="delete m-chil-dd">Xóa</div>
+                                                        <div class="pause m-chil-dd">Ngưng sử dụng</div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-align-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-align-left">00001</td>
+                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
+                                <td class="text-align-left">Nam</td>
+                                <td class="text-align-center">20/10/1990</td>
+                                <td class="text-align-left">016894752</td>
+                                <td class="text-align-left">Giảng viên</td>
+                                <td class="text-align-left">Hệ thống thông tin</td>
+                                <td class="text-align-left">01258456</td>
+                                <td class="text-align-left">BIDV</td>
+                                <td class="text-align-left">Từ Liêm - Hà Nội</td>
+                                <td class="text-align-center ">
+                                    <div class="m-td-dropdown">
+                                        <button>Sửa</button>
+                                        <button class="parent-multi-choices">
+                                                <div class=" m-item-icon m-icon-24 m-icon-arrow-down-blue m-mt-8 ">
+                                                    <div class="child-multi-choices">
+                                                        <div class="replication  m-chil-dd">Nhân bản</div>
+                                                        <div class="delete m-chil-dd">Xóa</div>
+                                                        <div class="pause m-chil-dd">Ngưng sử dụng</div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-align-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-align-left">00001</td>
+                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
+                                <td class="text-align-left">Nam</td>
+                                <td class="text-align-center">20/10/1990</td>
+                                <td class="text-align-left">016894752</td>
+                                <td class="text-align-left">Giảng viên</td>
+                                <td class="text-align-left">Hệ thống thông tin</td>
+                                <td class="text-align-left">01258456</td>
+                                <td class="text-align-left">BIDV</td>
+                                <td class="text-align-left">Từ Liêm - Hà Nội</td>
+                                <td class="text-align-center ">
+                                    <div class="m-td-dropdown">
+                                        <button>Sửa</button>
+                                        <button class="parent-multi-choices">
+                                                <div class=" m-item-icon m-icon-24 m-icon-arrow-down-blue m-mt-8 ">
+                                                    <div class="child-multi-choices">
+                                                        <div class="replication  m-chil-dd">Nhân bản</div>
+                                                        <div class="delete m-chil-dd">Xóa</div>
+                                                        <div class="pause m-chil-dd">Ngưng sử dụng</div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-align-center">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="text-align-left">00001</td>
+                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
+                                <td class="text-align-left">Nam</td>
+                                <td class="text-align-center">20/10/1990</td>
+                                <td class="text-align-left">016894752</td>
+                                <td class="text-align-left">Giảng viên</td>
+                                <td class="text-align-left">Hệ thống thông tin</td>
+                                <td class="text-align-left">01258456</td>
+                                <td class="text-align-left">BIDV</td>
+                                <td class="text-align-left">Từ Liêm - Hà Nội</td>
+                                <td class="text-align-center ">
+                                    <div class="m-td-dropdown">
+                                        <button>Sửa</button>
+                                        <button class="parent-multi-choices">
+                                                <div class=" m-item-icon m-icon-24 m-icon-arrow-down-blue m-mt-8 ">
+                                                    <div class="child-multi-choices">
+                                                        <div class="replication  m-chil-dd">Nhân bản</div>
+                                                        <div class="delete m-chil-dd">Xóa</div>
+                                                        <div class="pause m-chil-dd">Ngưng sử dụng</div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </button>
+                                    </div>
                                 </td>
                             </tr>
                             
-                            <tr>
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
-                            
-                            <tr class="m-row-selected">
-                                <td class="text-align-center">
-                                    <input type="checkbox">
-                                </td>
-                                <td class="text-align-left">00001</td>
-                                <td class="text-align-left">Nguyễn Mạnh Cường</td>
-                                <td class="text-align-left">Nam</td>
-                                <td class="text-align-center">20/10/1990</td>
-                                <td class="text-align-left">016894752</td>
-                                <td class="text-align-left">Giảng viên</td>
-                                <td class="text-align-left">Hệ thống thông tin</td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-left"></td>
-                                <td class="text-align-center  ">
-                                    <button>Sửa</button>
-                                    <button></button>
-                                </td>
-                            </tr>
                         </tbody>
                         </table>
                     </div>
+                </div>
 
-                    <div class="m-paging">
-                        <div class="m-paging-left">
-                            Tổng số: <b>1000</b> bản ghi
+                <div class="m-paging">
+                    <div class="m-paging-left">
+                        Tổng số: <b>1000</b> bản ghi
+                    </div>
+                    <div class="m-paging-right">
+                        <div class="m-paging-right-option">
+                            <select name="" id="">
+                                <option value="10">10 bản ghi trên 1 trang</option>
+                                <option value="20">20 bản ghi trên 1 trang</option>
+                                <option value="30">30 bản ghi trên 1 trang</option>
+                            </select>
                         </div>
-                        <div class="m-paging-right">
-                            <div class="m-paging-right-option">
-                                <select name="" id="">
-                                    <option value="10">10 bản ghi trên 1 trang</option>
-                                    <option value="20">20 bản ghi trên 1 trang</option>
-                                    <option value="30">30 bản ghi trên 1 trang</option>
-                                </select>
-                            </div>
-                            <div class="m-paging-right-page">
-                                <button class="m-btn-first">Trước</button>
-                                <button class="m-btn-first selected" >1</button>
-                                <button class="m-btn-first">2</button>
-                                <button class="m-btn-first">3</button>
-                                <button class="m-btn-last ">Sau</button>
-                            </div>
+                        <div class="m-paging-right-page">
+                            <button class="m-btn-first">Trước</button>
+                            <button class="m-btn-first selected" >1</button>
+                            <button class="m-btn-first">2</button>
+                            <button class="m-btn-first">3</button>
+                            <button class="m-btn-last ">Sau</button>
                         </div>
                     </div>
-
                 </div>
             </div>
-    
+            
         <div class="m-popup" id="popupInsert">
             <div class="m-popup-model"></div>
             <div class="m-popup-content">
@@ -523,7 +597,9 @@
                                     <div class="m-layout-form-40-60">
                                     <div class="m-input-form-60 m-pr-6 m-pb-12">
                                         <div class="m-flex-wrap">
-                                            <div class="m-input-title">Số CMND</div>
+                                            <div class="m-input-title parent-of-tooltips">Số CMND
+                                                <div class="child-of-tooltips">Số chứng minh nhân dân</div>
+                                            </div>
                                         </div>
                                         <input type="text" class="m-input-form" name="IdentityNumber" maxlength="20" propName="IdentityNumber" />
                                     </div>
@@ -554,14 +630,18 @@
                         <div class="m-form-content-3-col">
                             <div class="m-input-form-33 m-pr-6" >
                                 <div class="m-flex-wrap">
-                                    <div class="m-input-title">ĐT di động</div>
+                                    <div class="m-input-title parent-of-tooltips">ĐT di động
+                                        <div class="child-of-tooltips">Điện thoại di động</div>
+                                    </div>
                                 </div>
                                 <input type="text" class="m-input-form" name="TelephoneNumber" propName="TelephoneNumber" />
                             </div>
                             
                             <div class="m-input-form-33 m-pr-6" >
                                 <div class="m-flex-wrap">
-                                    <div class="m-input-title">ĐT cố định</div>
+                                    <div class="m-input-title parent-of-tooltips">ĐT cố định
+                                        <div class="child-of-tooltips">Điện thoại cố định</div>
+                                    </div>
                                 </div>
                                 <input type="text" class="m-input-form" name="PhoneNumber" propName="PhoneNumber" />    
                             </div>

@@ -1,13 +1,12 @@
 .table-content{
     background-color: #fff;
     border-radius: 4px;
-    padding:0 16px ;
     display: block;
     margin: 0 16px;
     display: flex;
     flex-direction: column;
 }
-.main-table{
+.wrap-table{
     overflow: auto;
     /* overflow-y: auto; */
 
@@ -29,6 +28,7 @@
     border-right: 1px solid #ccc;
     padding-left: 16px;
     padding-right: 16px;
+    white-space:nowrap;
 }
 .m-func-col{
     position: sticky;

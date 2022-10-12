@@ -6,6 +6,8 @@
 @import url(/css/components/dialog.css);
 @import url(/css/components/search.css);
 @import url(/css/components/popup.css);
+@import url(/css/components/tooltips.css);
+@import url(/css/components/dropdown.css);
 /* Layout */
 @import url(/css/layout/header.css);
 @import url(/css/layout/navbar.css);
@@ -45,6 +47,9 @@ body{
     padding-bottom: 12px;
   }
    
-  .m-ml-8 {
+.m-ml-8 {
     margin-left: 8px;
-  }
+}
+.m-mt-8{
+    margin-top: 8px;
+}
