@@ -1,3 +1,24 @@
+.input{
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 4px;
+    outline: unset;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    background-image: url(/assets/img/Sprites.64af8f61.svg);
+    background-position: -1041px -89px;
+    background-size: 22px;
+    background-repeat: no-repeat;
+
+}
+.input:hover{
+    outline: 1px solid #e2e2e2;
+}
+.input:focus{
+    border: 1px solid #409330;
+}
+
+
 .m-input-form{
     padding-left: 10px;
     padding-right: 12px;
@@ -18,8 +39,8 @@
     outline: 1px solid #e2e2e2;
 
 }
-.m-border-input:active{
-    outline: 1px solid #2ca01c;
+.m-border-input:focus{
+    outline: 1px solid #409330;
 }
 
 .m-input-title-require {
@@ -30,7 +51,7 @@
 }
 
 .m-input-form:focus {
-    outline: 1px solid #2ca01c;
+    outline: 1px solid #409330;
 }
 .m-input-form-40 {
     width: 40%!important;

@@ -7,11 +7,9 @@
     bottom: 0;
     right: 0;
     background-color:rgba(0, 0, 0, 0.596) ;
+    z-index: 2;
 }
 
-.m-popup.open{
-    display: flex;
-}
 .m-popup .m-popup-content{
     
     position: absolute;
@@ -23,6 +21,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 4px;
+    
 }
 .m-popup-content .popup-header{
     display: flex;
@@ -30,7 +29,7 @@
 }
 .m-popup-content .popup-header .popup-title{
     display: flex;
-    padding: 20px 12px 20px 32px;
+    padding: 24px 12px 24px 24px;
     position: relative;
     width: 100%;
 } 
@@ -38,11 +37,12 @@
     font-size: 24px;
     color: #111;
     font-weight: 700;
+    
 }
 
 .m-popup-content .popup-header .popup-close{
     display: flex;
-    padding: 12px;
+    padding: 24px;
 }
 .m-popup-checkbox{
     padding: 12px;
@@ -53,7 +53,7 @@
     height: 18px;
 }
 .m-popup-content .popup-content{
-    padding: 0 32px;
+    padding: 0 24px;
 }
 #m-form-employee .m-form-conten-2-col{
     display: flex;
@@ -94,10 +94,12 @@
 }
 
 .m-form-footer{
-    margin-top: 16px;
+    margin-top: 24px;
+    margin-bottom: 0;
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }

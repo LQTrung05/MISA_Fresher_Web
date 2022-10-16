@@ -8,6 +8,7 @@
 @import url(/css/components/popup.css);
 @import url(/css/components/tooltips.css);
 @import url(/css/components/dropdown.css);
+@import url(/css/components/loading.css);
 /* Layout */
 @import url(/css/layout/header.css);
 @import url(/css/layout/navbar.css);
@@ -33,6 +34,7 @@ body{
     margin: 0;
     font-family:notosans-regular;
     font-size: 13px;
+    min-width: 768px;
 }
 *{
     font-family: inherit;
@@ -43,7 +45,7 @@ body{
     padding-right: 6px;
   }
   
-  .m-pb-12 {
+.m-pb-12 {
     padding-bottom: 12px;
   }
    
@@ -52,4 +54,14 @@ body{
 }
 .m-mt-8{
     margin-top: 8px;
+}
+
+.cl-white{
+    color: #fff;
+}
+.display-f{
+   display: flex; 
+}
+.display-b{
+    display: block;
 }
