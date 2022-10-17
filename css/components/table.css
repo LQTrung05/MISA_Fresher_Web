@@ -63,7 +63,7 @@
 .m-table tbody td:first-child,
 .m-table thead th:last-child,
 .m-table tbody td:last-child{
-    position: sticky;
+    /* position: sticky; */
     left: 0;
     right: 0;
     /* z-index: 1; */
