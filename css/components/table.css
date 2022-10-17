@@ -8,23 +8,14 @@
 }
 .wrap-table{
     overflow: auto;
-    position: relative;
+    /* position: relative; */
 
 }
 .m-table{
   width: 100%;
   border-collapse:collapse;
 }
-.m-table:after{
-    content: "";
-    height: 100%;
-    width: 1px;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    /* z-index: -1; */
-}
+
 .m-table tr{
     height: 40px;
     border-bottom: 1px solid #ccc;
@@ -39,7 +30,7 @@
     padding-left: 16px;
     padding-right: 16px;
     white-space:nowrap;
-    background-color: #fff;
+    /* background-color: #fff; */
     z-index:auto;
 }
 
@@ -50,9 +41,12 @@
     border: none;
     cursor: pointer;
 }
-.m-table tbody tr:hover{
-   
+.m-table tbody tr:hover td,th{
+    background-color: #e5e8ec;
+}
+.m-table tbody tr:active{
     cursor: pointer;
+    background-color: #96D58A;
 }
 
 .m-table .text-align-left{
@@ -65,24 +59,23 @@
     text-align: center;
 }
 /* Dùng position:sticky để cố định cột đầu và cột cuối của table */
-/* .m-table thead th:first-child,
+.m-table thead th:first-child,
 .m-table tbody td:first-child,
 .m-table thead th:last-child,
 .m-table tbody td:last-child{
     position: sticky;
     left: 0;
     right: 0;
-} */
-.m-table thead th:first-child,
-.m-table tbody td:first-child{
-    position: sticky;
-    left: 0;
-    right: 0;
+    /* z-index: 1; */
 }
+.m-table tbody td:first-child,
+.m-table tbody td:last-child{
+    background-color: #fff;
 
+}
 .m-table thead th:last-child,
 .m-table tbody td:last-child{
-    border: none !important;
+    border-right: none !important;
 }
 .show-contexMenu{
     z-index: 1;

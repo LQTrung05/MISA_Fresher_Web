@@ -30,3 +30,7 @@ function stopTabIndex(event)
 {
     event.preventDefault();
 }
+
+function dblClickTrTable(){
+    handleClick()
+}
