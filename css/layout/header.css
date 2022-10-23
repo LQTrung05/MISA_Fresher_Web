@@ -1,4 +1,3 @@
-
 .header{
     position: fixed;
     display: flex;
@@ -20,28 +19,27 @@
     display: flex;
 }
 .m-company-name .m-header-icon{
-    margin-left: 8px;
+    margin:0 16px;
 }
 .m-company-name .m-branch-name{
-    padding: 4px 8px;
-    font-weight: 700;
+    padding: 4px 0;
+    margin-right: 16px;
+    /* font-weight: 700; */
+    font-family: notosans-bold;
 }
 .m-company-name .m-navbar-icon{
     margin-top: 4px;
 }
 .m-user-name{
     display: flex;
-    padding-right: 32px;
+    padding-right: 16px;
 }
 .m-user-image{
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-}
-.m-user-name .m-user-image{
-padding:0 16px ;
 }
 .m-user-name .m-user{
     padding-right: 8px;
-    font-weight: 700;
+    font-family: notosans-bold;
 }

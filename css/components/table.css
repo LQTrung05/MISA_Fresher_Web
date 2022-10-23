@@ -1,4 +1,4 @@
-.table-content{
+.table-content {
     background-color: #fff;
     border-radius: 4px;
     display: block;
@@ -6,78 +6,138 @@
     display: flex;
     flex-direction: column;
 }
-.wrap-table{
+
+.header-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-table {
     overflow: auto;
-    /* position: relative; */
+    border-radius: 4px;
+    height: calc( 100vh - 56px - 56px - 168px);
 
 }
-.m-table{
-  width: 100%;
-  border-collapse:collapse;
-}
 
-.m-table tr{
-    height: 40px;
+.m-table, .m-table td, .m-table th {
+    width: 100%;
+    border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+
+    border-collapse: collapse;
 }
-.m-table tr th{
-    text-transform: uppercase;
-    vertical-align: middle;
-    
+
+
+.m-table tr {
+    height: 48px;
+
+    /* border-bottom: 1px solid #ccc; */
 }
-.m-table tr td,th{
+
+.m-table tr th {
+    font-family: 'notosans-bold';
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 3;
+}
+
+.m-table tr td,
+th {
     border-right: 1px solid #ccc;
     padding-left: 16px;
     padding-right: 16px;
-    white-space:nowrap;
-    /* background-color: #fff; */
-    z-index:auto;
+    white-space: nowrap;
+    z-index: auto;
 }
 
-.m-table tbody tr button{
+.m-table tbody tr button {
     color: #0075C0;
     font-weight: 700px;
-    background:none;
+    background: none;
     border: none;
     cursor: pointer;
 }
-.m-table tbody tr:hover td,th{
+
+.m-table tbody tr:hover td,
+th {
     background-color: #e5e8ec;
 }
-.m-table tbody tr:active{
-    cursor: pointer;
-    background-color: #96D58A;
-}
 
-.m-table .text-align-left{
+.m-table .text-align-left {
     text-align: left;
 }
-.m-table .text-align-right{
+
+.m-table .text-align-right {
     text-align: right;
 }
-.m-table .text-align-center{
+
+.m-table .text-align-center {
     text-align: center;
 }
+
 /* Dùng position:sticky để cố định cột đầu và cột cuối của table */
 .m-table thead th:first-child,
 .m-table tbody td:first-child,
 .m-table thead th:last-child,
-.m-table tbody td:last-child{
+.m-table tbody td:last-child {
     /* position: sticky; */
-    left: 0;
-    right: 0;
+    /* left: 0; */
+    /* right: 0; */
     /* z-index: 1; */
 }
+
 .m-table tbody td:first-child,
-.m-table tbody td:last-child{
+.m-table tbody td:last-child {
     background-color: #fff;
 
 }
+
 .m-table thead th:last-child,
-.m-table tbody td:last-child{
+.m-table tbody td:last-child {
     border-right: none !important;
 }
-.show-contexMenu{
+
+.show-contexMenu {
     z-index: 1;
 }
 
+/* CSS cho bảng đơn vị trong dropdown đơn vị */
+/* .m-table-department th{
+} */
+.m-menu-table {
+    border-collapse: collapse;
+    height: 40px;
+    width: 100%;
+
+}
+.m-menu-table tr{
+    border: none !important;
+} 
+
+.m-menu-header {
+    /* height: 36px; */
+}
+
+
+.m-combo-menu-content {
+    max-height: 160px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 2px 1px;
+}
+
+.m-menu-items-tr {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 36px;
+    /* line-height: 32px; */
+    white-space: nowrap;
+}
+
+.m-menu-items-tr:hover {
+    color: #35bf22;
+    background-color: #ebedf0;
+}

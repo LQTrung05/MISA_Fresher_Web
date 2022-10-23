@@ -1,0 +1,70 @@
+.m-dialog-box {
+  transition: all .2s;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20000;
+  opacity: 1;
+}
+
+.m-dialog-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.m-dialog-background {
+  width: 100%;
+  background: rgba(0, 0, 0, .4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+  transition: all .25s ease;
+  opacity: 1;
+}
+
+.m-dialog-drag {
+  position: absolute;
+  z-index: 100;
+}
+
+.m-dialog-message {
+  width: 444px;
+  background-color: #fff;
+  padding: 32px;
+}
+
+.m-dialog-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.m-content-message {
+  overflow: auto;
+  max-height: 400px;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-top: 12px;
+}
+
+.m-dialog-line {
+  height: 0.5px;
+  background: #b8bcc3;
+  margin-bottom: 20px;
+}
+
+.m-employee-danger .m-dialog-footer, .m-employee-success .m-dialog-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.m-employee-question .m-dialog-footer, .m-delete-warning .m-dialog-footer {
+  display: flex;
+  justify-content: space-between;
+}

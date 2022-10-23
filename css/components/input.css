@@ -1,15 +1,10 @@
 .input{
     height: 36px;
+    margin: 8px 0;
     padding: 0 12px;
     border-radius: 4px;
     outline: unset;
-    margin: 8px 0;
     border: 1px solid #ccc;
-    background-image: url(/assets/img/Sprites.64af8f61.svg);
-    background-position: -1041px -89px;
-    background-size: 22px;
-    background-repeat: no-repeat;
-
 }
 .input:hover{
     outline: 1px solid #e2e2e2;
@@ -17,13 +12,15 @@
 .input:focus{
     border: 1px solid #409330;
 }
-
+.input--error{
+    border:1px solid #E61D1D;
+}
 
 .m-input-form{
-    padding-left: 10px;
-    padding-right: 12px;
-    border-radius: 2px;
-    height: 32px;
+    padding-left: 12px;
+    padding-right: 8px;
+    border-radius: 4px;
+    height: 36px;
     border: 1px solid #babec5;  
     box-sizing: border-box;
     outline: none;
@@ -43,8 +40,9 @@
     outline: 1px solid #409330;
 }
 
-.m-input-title-require {
+.m-icon-require {
     color: red;
+    align-self: center;
 }
 .m-input-form:hover {
     outline: 1px solid #e2e2e2;
@@ -52,6 +50,9 @@
 
 .m-input-form:focus {
     outline: 1px solid #409330;
+}
+.m-input-form-error{
+    outline: 1px solid #E61D1D;
 }
 .m-input-form-40 {
     width: 40%!important;
@@ -67,7 +68,20 @@ m-input-form-33{
 .m-input-form-100 {
     width: 100%!important;
 }
-
-input.m-input-form.m-input-require {
-    width: 100%;
+input[type=radio] {
+    width: 16px;
+    height: 16px;
+    accent-color: #409330 ;
 }
+input[type=checkbox]{
+    accent-color: #409330 ;
+    width: 20px;
+    height: 20px;
+}
+.input--error{
+    border:1px solid #E61D1D;
+}
+/* input.required.m-input-form-error+div.err-message{
+    display: block;
+} */
+

@@ -6,7 +6,6 @@
 @import url(/css/components/dialog.css);
 @import url(/css/components/search.css);
 @import url(/css/components/popup.css);
-@import url(/css/components/tooltips.css);
 @import url(/css/components/dropdown.css);
 @import url(/css/components/loading.css);
 /* Layout */
@@ -33,12 +32,13 @@
 body{
     margin: 0;
     font-family:notosans-regular;
-    font-size: 13px;
-    min-width: 768px;
+    font-size: 14px;
+    overflow: hidden;
 }
 *{
     font-family: inherit;
     font-size: inherit;
+    box-sizing: border-box;
 }
 
 .m-pr-6 {
@@ -47,7 +47,7 @@ body{
   
 .m-pb-12 {
     padding-bottom: 12px;
-  }
+}
    
 .m-ml-8 {
     margin-left: 8px;
@@ -55,7 +55,18 @@ body{
 .m-mt-8{
     margin-top: 8px;
 }
-
+.m-ml-16{
+    margin-left: 16px;
+}
+.m-mr-24{
+    margin-right: 24px;
+}
+.m-mb-8{
+    margin-bottom: 8px;
+}
+.m-mb-24{
+    margin-bottom: 24px;
+}
 .cl-white{
     color: #fff;
 }
@@ -64,4 +75,13 @@ body{
 }
 .display-b{
     display: block;
+}
+.display-none{
+    display: none;
+}
+.align-seft-center{
+    align-self: center;
+}
+.position-relative{
+    position: relative;
 }

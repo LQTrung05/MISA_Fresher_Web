@@ -3,34 +3,50 @@
     align-items: center;
     align-self: end;
     margin: 16px;
+    width: fit-content;
 }
 
 .m-search-area-content{
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
-    width: 230px;
     border-radius: 4px;
+    height: 36px;
+    border: 1px solid #EBEBEB;
+    outline: none;
 }
 .m-refresh-btn{
     margin-left: 8px;
 }
 .m-button{
-    font-weight: 700;
+    font-family: notosans-bold;
 }
 
 /* Khi nhập liệu thì viền thẻ input đổi màu */
-.m-search-area-content:active{
-    border: 1px solid #2ca01c;
+.m-search-area-content:focus-within{
+    border: 1px solid #50B83C;
 }
-.m-search-area-content:hover{
-    outline: 1px solid #e2e2e2;
+.m-border-input-search:focus-within{
+    background-color: #fff;
+}
+
+.m-search-area-content:hover,
+.m-border-input-search:hover{
+    border: 1px solid #E6E6E6;
+    background-color: #F6F6F6;
 }
 .m-search-area-content::placeholder{
     color: #bbb;
     font-size: 12px;
 }
-
-.m-input-icon{
+.m-border-input-search{
+    padding: 0 0 0 12px;
+    height: 34px;
+    border: none !important;
+    outline: none;
+    background-color: none;
+}
+.m-icon-search{
+    margin:0 8px;
     align-items: center;
+    cursor: pointer;
 }

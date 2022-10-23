@@ -6,18 +6,18 @@
     padding: 0 16px;
     color: #fff;
     background-color: #50B83C;
-    cursor: pointer;
-    
 }
-
-.m-button:hover, focus{
+.m-button:hover:not([disabled]){
     background-color: #73C663;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
-.m-button:active{
+.m-button:focus{
     background-color: #409330;
 }
+.m-button:disabled{
+    opacity:0.56;
 
+}
 .m-btn{
     height: 36px;
     border-radius: 4px;
@@ -25,8 +25,8 @@
     background-color: #fff;
     padding: 0 16px;
     color: #000;
-    margin-right: 16px;
-    font-weight: 600;
+    margin-right: 8px;
+    font-family: notosans-bold;
 }
 .m-btn:hover{
     cursor: pointer;

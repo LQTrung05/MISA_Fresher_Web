@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.12.1-web/css/all.css">
     <title>Nhân viên</title>
 </head>
-<body>
+<html>
     
         
     <div class="table" style="margin-top:16px ;">
@@ -322,17 +322,68 @@
                 </form>
             </div>
         </div>
-    </div> 
+    </div>
+    <div class="center" style="margin:64px"> 
+    <div class="dropdownlist">
+        <input class="input dropdownlist__input" type="text">
+        <button class="dropdownlist__button" id="btn-">
+            <div class=" m-icon-arrow-dropdown m-icon-16" style="margin:0 auto"></div>
+        </button>
+        <div class="dropdownlist__data">
+            <div class="data-item">10 bản ghi 1 trang</div>
+            <div class="data-item">20 bản ghi 1 trang</div>
+            <div class="data-item">30 bản ghi 1 trang</div>
+            <div class="data-item">40 bản ghi 1 trang</div>
+        </div>
+    </div>
+    </div>
 
     <div>
-        <input type="text" class="input">
+        <input type="date">
     </div>
+    <div class="m-input-100 m-pb-12">
+        <div class="m-flex">
+            <div class="m-input-title">Đơn vị</div>
+            <div class="m-input-title-require">&nbsp;*</div>
+        </div>
+        <div class="m-combo-box">
+            <div class="m-combo-main-content">
+                <div class="m-selected-options">
+                    <input type="hidden" name="DepartmentId"
+                        propName="DepartmentId" />
+                    <input type="text" class="m-combo-input"
+                        name="DepartmentName"
+                        propName="DepartmentName" />
+                </div>
+                <div class="m-combo-action m-select-department">
+                    <div class="m-btn-dropdown">
+                        <div
+                            class="m-icon-16 m-icon-arrow-dropdown">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-combo-menu" hidden>
+        <div class="m-combo-menu-header">
+            <table class="m-menu-table">
+                <thead class="m-menu-header">
+                    <tr>
+                        <th class="m-menu-header-th" style="width: 100px; text-align: left"><span>Mã đơn vị</span></th>
+                        <th class="m-menu-header-th" style="width: 250px; text-align: left"><span>Tên đơn vị</span></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="m-combo-menu-content">
+            <table class="m-menu-table">
+                <tbody class="m-menu-items m-departments-list"></tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <script src="../LQTrung_MF1452/js/jquery-3.6.1.min.js"></script> -->
 
     
-    <div>
-        <input type="text" class="input m-icon-search">
-    </div>
-
-
 </body>
 </html>
