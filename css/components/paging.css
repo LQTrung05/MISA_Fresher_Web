@@ -6,8 +6,6 @@
     height: 56px;
     margin-right: 16px;
     margin-bottom: 24px;
-    /* padding-left: 32px;
-    padding-right: 16px; */
     padding: 12px 16px 12px 32px;
     position: fixed;
     z-index: 0;
@@ -24,6 +22,7 @@
 .m-paging .m-paging-right{
     display: flex;
     align-items: center;
+    padding-right: 30px;
 }
 .m-paging .m-paging-right .m-paging-right-option select{
     border-radius: 4px;

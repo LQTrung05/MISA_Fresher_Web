@@ -22,17 +22,14 @@
 
 .m-table, .m-table td, .m-table th {
     width: 100%;
-    border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-
+    border-right: 1px solid #ccc;
     border-collapse: collapse;
 }
 
 
 .m-table tr {
     height: 48px;
-
-    /* border-bottom: 1px solid #ccc; */
 }
 
 .m-table tr th {
@@ -44,11 +41,10 @@
 }
 
 .m-table tr td,
-th {
-    border-right: 1px solid #ccc;
+.m-table tr th {
     padding-left: 16px;
     padding-right: 16px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     z-index: auto;
 }
 
@@ -60,11 +56,12 @@ th {
     cursor: pointer;
 }
 
-.m-table tbody tr:hover td,
-th {
-    background-color: #e5e8ec;
+.m-table tbody tr:hover td{
+    background-color: #F8F8F8;
 }
-
+.m-table tbody tr:focus-within td{
+    background-color: #F1FFEF;
+}
 .m-table .text-align-left {
     text-align: left;
 }
@@ -75,23 +72,6 @@ th {
 
 .m-table .text-align-center {
     text-align: center;
-}
-
-/* Dùng position:sticky để cố định cột đầu và cột cuối của table */
-.m-table thead th:first-child,
-.m-table tbody td:first-child,
-.m-table thead th:last-child,
-.m-table tbody td:last-child {
-    /* position: sticky; */
-    /* left: 0; */
-    /* right: 0; */
-    /* z-index: 1; */
-}
-
-.m-table tbody td:first-child,
-.m-table tbody td:last-child {
-    background-color: #fff;
-
 }
 
 .m-table thead th:last-child,
@@ -116,11 +96,6 @@ th {
     border: none !important;
 } 
 
-.m-menu-header {
-    /* height: 36px; */
-}
-
-
 .m-combo-menu-content {
     max-height: 160px;
     overflow-x: hidden;
@@ -140,4 +115,7 @@ th {
 .m-menu-items-tr:hover {
     color: #35bf22;
     background-color: #ebedf0;
+}
+.checked{
+    background-color: #F1FFEF;
 }
