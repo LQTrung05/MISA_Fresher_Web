@@ -59,6 +59,7 @@
   margin-bottom: 20px;
 }
 
+
 .m-employee-danger .m-dialog-footer, .m-employee-success .m-dialog-footer {
   display: flex;
   justify-content: center;
@@ -67,4 +68,29 @@
 .m-employee-question .m-dialog-footer, .m-delete-warning .m-dialog-footer {
   display: flex;
   justify-content: space-between;
+}
+.m-button-no{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+/* Hiển thị message thông báo thành công */
+.m-employee-success {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  bottom: 80px;
+  right: 40px;
+  border: 1px solid #ccc;
+}
+.m-dialog-message-success{
+  width: 200px;
+  padding-top: 8px;
+    padding-left: 8px;
+}
+.m-content-message-success{
+  margin-bottom: 16px;
+  padding-left: 8px;
+  padding-top: 12px;
 }

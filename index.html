@@ -132,7 +132,7 @@
                 <div class="table-content">
                     <div class="header-table">
                         <div class="btn-delete-all">
-                            <button class="m-button" id="btn-delete" disabled >Xóa</button>
+                            <button class="m-button" id="btn-delete" disabled>Xóa</button>
                         </div>
                         <div class="m-search-area">
                             <div class="m-search-area-content">
@@ -147,20 +147,30 @@
                     <div class="wrap-table">
                         <table class="m-table" id="listEmployees">
                             <thead>
-                                 <tr>
+                                <tr>
                                     <th class="text-align-center">
-                                        <input id="choose-all" type="checkbox" >
+                                        <input id="choose-all" type="checkbox">
                                     </th>
-                                    <th class="text-align-left" fieldName="EmployeeCode" style="min-width:140px ;">Mã nhân viên</th>
-                                    <th class="text-align-left" fieldName="EmployeeName"style="min-width:200px ;">Tên nhân viên</th>
-                                    <th class="text-align-left" fieldName="Gender" style="min-width:129px ;">Giới tính</th>
-                                    <th class="text-align-center " style="min-width:120px ;"fieldName="DateOfBirth">Ngày sinh</th>
-                                    <th class="text-align-left" title="Số chứng minh nhân dân" fieldName="IdentityNumber" style="min-width:130px ;">Số CMND</th>
-                                    <th class="text-align-left" style="min-width:150px ;" fieldName="EmployeePosition">Chức danh</th>
-                                    <th class="text-align-left" fieldName="DepartmentName" style="min-width:150px ;">Tên đơn vị</th>
-                                    <th class="text-align-left" style="min-width:130px ;" fieldName="BankAccountNumber">Số tài khoản</th>
-                                    <th class="text-align-left" style="min-width:150px ;" fieldName="BankName">Tên ngân hàng</th>
-                                    <th class="text-align-left" style="min-width:200px ;" fieldName="BankBranchName">Chi nhánh ngân hàng</th>
+                                    <th class="text-align-left" fieldName="EmployeeCode" style="min-width:140px ;">Mã
+                                        nhân viên</th>
+                                    <th class="text-align-left" fieldName="EmployeeName" style="min-width:200px ;">Tên
+                                        nhân viên</th>
+                                    <th class="text-align-left" fieldName="Gender" style="min-width:129px ;">Giới tính
+                                    </th>
+                                    <th class="text-align-center " style="min-width:120px ;" fieldName="DateOfBirth">
+                                        Ngày sinh</th>
+                                    <th class="text-align-left" title="Số chứng minh nhân dân"
+                                        fieldName="IdentityNumber" style="min-width:130px ;">Số CMND</th>
+                                    <th class="text-align-left" style="min-width:150px ;" fieldName="EmployeePosition">
+                                        Chức danh</th>
+                                    <th class="text-align-left" fieldName="DepartmentName" style="min-width:150px ;">Tên
+                                        đơn vị</th>
+                                    <th class="text-align-left" style="min-width:130px ;" fieldName="BankAccountNumber">
+                                        Số tài khoản</th>
+                                    <th class="text-align-left" style="min-width:150px ;" fieldName="BankName">Tên ngân
+                                        hàng</th>
+                                    <th class="text-align-left" style="min-width:200px ;" fieldName="BankBranchName">Chi
+                                        nhánh ngân hàng</th>
                                     <th class="text-align-center" style="min-width:110px; ">Chức năng</th>
                                 </tr>
                             </thead>
@@ -176,7 +186,7 @@
                         <div class="m-paging-right">
                             <div class="m-paging-right-option">
                                 <div class="dropdownlist">
-                                    <input class="input dropdownlist__input" type="text" value="10 bảng ghi 1 trang" >
+                                    <input class="input dropdownlist__input" type="text" value="10 bảng ghi 1 trang">
                                     <button class=" btn-pagination" id="btn-">
                                         <div class=" m-icon-arrow-dropdown m-icon-16" style="align-self: center"></div>
                                     </button>
@@ -199,7 +209,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
         </div>
     </div>
@@ -207,7 +217,7 @@
         <div class="m-popup-content">
             <div class="popup-header">
                 <div class="popup-title">
-                    <div class="popup-title-name">Thông tin nhân viên</div>
+                    <div class="popup-title-name"></div>
                     <label class="m-popup-checkbox display-f">
                         <input type="checkbox" class="m-input-checkbox-popup" tabindex="1" />
                         <span class="m-input-checkbox-label">Là khách hàng</span>
@@ -219,7 +229,7 @@
                 </div>
                 <div class="popup-close">
                     <div class="m-icon-24 m-icon-help" style="margin-right: 8px"></div>
-                    <div class="m-icon-24 m-icon-close m-close-add-popup js-close-form"  title="Đóng (ESC)"></div>
+                    <div class="m-icon-24 m-icon-close m-close-add-popup js-close-form" title="Đóng (ESC)"></div>
                 </div>
             </div>
             <div class="popup-content">
@@ -229,15 +239,16 @@
                             <div class="m-layout-form-40-60 display-f">
                                 <div class="m-input-form-40 m-pr-6 m-mb-24">
                                     <div class="display-f m-mb-8">
-                                        <div class="m-input-title-required ">Mã</div>
+                                        <div class="m-input-title-required m-input-title">Mã</div>
                                         <div class=" m-icon-require">&nbsp;*</div>
                                     </div>
                                     <input type="text" class="m-input-form required" name="EmployeeCode" maxlength="25"
-                                        propName="EmployeeCode" id="employeeID" tabindex="3" />
+                                        propName="EmployeeCode" id="employeeCode" tabindex="3" />
+                                    <div class="err-message err-id-employee"></div>
                                 </div>
                                 <div class="m-input-form-60 m-mb-24">
                                     <div class="display-f m-mb-8">
-                                        <div class="m-input-title-required">Tên</div>
+                                        <div class="m-input-title-required m-input-title">Tên</div>
                                         <div class=" m-icon-require">&nbsp;*</div>
                                     </div>
                                     <input type="text" class="m-input-form required " name="EmployeeName"
@@ -286,29 +297,30 @@
 
                             <div class="m-input-form-100 m-mb-24">
                                 <div class="display-f m-mb-8">
-                                    <div class="m-input-title-required">Đơn vị</div>
+                                    <div class="m-input-title-required m-input-title">Đơn vị</div>
                                     <div class=" m-icon-require">&nbsp;*</div>
                                 </div>
-                                
-                                <div class="dropdownlist">
-                                    <input type="hidden" name="DepartmentId" id="departmentID" propName="DepartmentId"  />
-                                    <input class="input dropdownlist__input required"   name="DepartmentName"  
-                                    tabindex="7" readonly="true"
-                                    id="departmentName"
-                                        propName="DepartmentName" type="text">
+
+                                <div class="dropdownlist dropdown-department">
+                                    <input type="hidden" name="DepartmentId" id="departmentID"
+                                        propName="DepartmentId" />
+                                    <input class="input dropdownlist__input required" name="DepartmentName" tabindex="7"
+                                        readonly="true" id="departmentName" propName="DepartmentName" type="text">
 
                                     <div class="dropdownlist__button btn-department" id="btn-" tabindex="8">
                                         <div class=" m-icon-arrow-dropdown m-icon-16"
                                             style="margin:0 auto; align-self: center;"></div>
                                     </div>
-                                    <div class="dropdownlist__data top-100" >
+                                    <div class="dropdownlist__data top-100 dropdown-department">
                                         <div class="m-combo-menu-content">
-                                            <table class="m-menu-table"  >
-                                                <tbody class="m-menu-items m-departments-list " ></tbody>
+                                            <table class="m-menu-table">
+                                                <tbody class="m-menu-items m-departments-list "></tbody>
                                             </table>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="err-message err-department-not-null"></div>
+
                             </div>
                             <div class="m-input-form-100 m-mb-24">
                                 <div class="m-mb-8">
@@ -337,7 +349,7 @@
                                     </div>
                                     <input type="date" class="m-input-form" name="IdentityDate" id="identityDate"
                                         propName="IdentityDate" tabindex="10" />
-                                    <div class="err-message">Ngày cấp không được lớn hơn ngày hiện tại</div>
+                                    <div class="err-message"></div>
                                 </div>
                             </div>
                             <div class="m-input-form-100 m-mb-24">
@@ -418,12 +430,13 @@
 
                     <div class="m-form-footer">
                         <div class="m-form-part-cancel">
-                            <button class="m-btn js-close-form" tabindex="20">Hủy</button>
+                            <button class="m-btn js-close-form" tabindex="22"
+                                onkeydown="stopTabIndex(event)">Hủy</button>
                         </div>
                         <div class="m-form-part-submit">
                             <button class=" m-btn" tabindex="21" id="btnAddEmployee">Cất</button>
-                            <button id="btnAddAndResetEpl" class="m-button m-btn-insert-and-reload" tabindex="22"
-                                onkeydown="stopTabIndex(event)">Cất và Thêm</button>
+                            <button id="btnAddAndResetEpl" class="m-button m-btn-insert-and-reload" tabindex="20">Cất và
+                                Thêm</button>
                         </div>
                     </div>
 
@@ -474,7 +487,7 @@
                         <div class="m-dialog-line"></div>
                         <div class="m-dialog-footer">
                             <button
-                                class="m-button m-button-secondary m-close-delete-warning m-button-size-default m-button-border-false">
+                                class="m-button m-button-secondary m-close-delete-warning m-button-size-default m-button-border-false m-button-no">
                                 <div class="m-button-text">Không</div>
                             </button>
                             <button class="m-button m-confirm-delete m-button-size-default m-button-border-false">
@@ -524,30 +537,30 @@
         </div>
     </div>
     <!-- Dialog thông báo thành công-->
-    <div class="m-dialog m-employee-success" hidden >
+    <!-- <div class="m-dialog m-employee-success" hidden >
         <div class="m-dialog-box">
             <div class="m-dialog-center">
                 <div class="m-dialog-background"></div>
-                <div class="m-dialog-drag">
-                    <div class="m-dialog-message">
-                        <div class="m-dialog-content">
-                            <div class="m-content-icon">
-                                <div class="m-icon-48 m-icon-success"></div>
-                            </div>
-                            <div class="m-content-message"></div>
-                        </div>
-                        <div class="m-dialog-line"></div>
-                        <div class="m-dialog-footer">
-                            <button class="m-button  m-button-size-default m-button-border-false js-close-dialog">
-                                <div class="m-button-text ">Đóng</div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
+    </div> -->
+    <div class="m-employee-success">
+        <div class="m-dialog-message-success">
+            <div class="m-dialog-content">
+                <div class="m-content-icon">
+                    <div class="m-icon-48 m-icon-success"></div>
+                </div>
+                <div class="m-content-message-success" ></div>
+            </div>
+            <div class="m-dialog-line"></div>
+            <!-- <div class="m-dialog-footer">
+                <button class="m-button  m-button-size-default m-button-border-false js-close-dialog">
+                    <div class="m-button-text ">Đóng</div>
+                </button>
+            </div> -->
+        </div>
     </div>
-
     <!-- Progress khi load dữ liệu -->
     <div class="loading-data">
         <img src="./assets/loading.svg" alt="" class="img-loading">
